@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="main container ">
+        <div class="row">
+            <div class="col-12">
+                <header class="mb-5">
+                    <span class="title d-flex">
+                        <i class="fas fa-3x fa-comments"></i>
+                        <span class=" align-baseline text-center mt-4 pl-3 text text-dark ">ChatBox</span>
+                    </span>
+                </header>
+        
+
+                <section class="enter_box">
+
+                    <form action="chat.html">
+                        <div class="form-group col-6">
+                            <label for="username">Username</label>
+                            <input
+                                type="text"
+                                name="username"
+                                id="username"
+                                placeholder="Enter username..."
+                                class="form-control"
+                                required
+                            />
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="room">Room</label>
+                            <select name="room" class="custom-select custom-select-md mb-3" id="room">
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="Python">Python</option>
+                                <option value="PHP">PHP</option>
+                                <option value="C#">C#</option>
+                                <option value="Ruby">Ruby</option>
+                                <option value="Java">Java</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-outline-success ml-3">Join Chat</button>
+                    </form>
+
+                </section>
+                
+
+
+                <!-- <section class="enter_box">
+                    <form action="chat.html">
+                        <div class="form-group col-6">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter Your Name" required>
+                          </div>
+                          <div class="form-group col-6">
+                            <label for="room">Room</label>
+                            <select class="custom-select custom-select-md mb-3" id="room">
+                                <option selected>select room</option>
+                                <option value="1">Design</option>
+                                <option value="2">Developement</option>
+                                <option value="3">Issue</option>
+                              </select>     
+                          </div>
+                          <button class="btn btn-outline-success ml-3" type="submit">Submit</button>
+                    </form>
+                </section> -->
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
